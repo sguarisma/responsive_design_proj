@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+/* Heading Section */
+.heading {
+  background-color: #0077b6;
+  color: white;
+
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+  font-size: 30px;
+  text-shadow: 2px 2px #4d4545;
+}
+
+/* Context Section */
+.content-container {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Context List */
+.contexts_list {
+  width: 80%;
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: left;
+}
+/* Context Item */
+.context {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+/* Number Styling */
+.number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #b0b0b0;
+  margin-right: 15px;
+}
+
+/* Content Inside Context */
+.context-content {
+  flex: 1;
+}
+
+/* Title Styling */
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Description Styling */
+.description {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0 0;
+}
+
+.case_study_text {
+  color: #9fc3c8;
+}
+
+h2 {
+  text-align: left;
+}
+
+/* Dropdown button in Heading */
+.dropdown-btn {
+  min-width: 50%;
+  font-size: large;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+.overview {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.overview div {
+  width: 30%;
+}
+hr {
+  margin: 20px 0;
+  border: 1px solid #a1c6ea; /* Light blue border */
+}
+
+/* Tabs Section */
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #a1c6ea;
+  background: #e0f7fa; /* Light cyan background */
+  color: #0077b6; /* Blue text */
+  transition: background 0.3s, color 0.3s;
+  border-radius: 10px;
+  margin: 10px;
+}
+.tab:hover {
+  background: #0077b6;
+  color: white;
+  transform: scale(1.05);
+}
+.tab.active {
+  background: #0077b6; /* Dark blue */
+  color: white;
+  border-bottom: 1px solid white;
+}
+.content {
+  border: 1px solid #a1c6ea;
+  padding: 20px;
+  display: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+.content.active {
+  display: block;
+}
+
+/* Image Slideshows */
+.slideshow {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+.slide {
+  display: none;
+}
+
+/* Table Styling */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

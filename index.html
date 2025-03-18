@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study: Accessible Components- Dropdown Menus</title>
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- Page Content-->
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>
+          <div class="case_study_text">Case Study:</div>
+
+          Redesigning the Dropdown Menu
+        </h1>
+        <div class="dropdown">
+          <p>Incorporating accessibility into the redesign of the dropdown menu in a case study</p>
+
+          <select class="dropdown-btn">
+            <option selected disabled>Purpose</option>
+            <option>
+              Exploring the accessibility and usability of dropdown menus
+            </option>
+            <option>
+              Exploring the different states, inputs, and outputs of dropdown
+              menus
+            </option>
+            <option>Proposing a revised dropdown menu component</option>
+          </select>
+        </div>
+      </div>
+      <br />
+
+      <div class="overview">
+        <div>
+          <h3>Role:</h3>
+          <p>
+            UX Researcher <br />
+            Student in CSCI 1300
+          </p>
+        </div>
+        <div>
+          <h3>Timeline:</h3>
+          <p>1 Week</p>
+        </div>
+        <div>
+          <h3>Project Type:</h3>
+          <p>Case study on accessible components.</p>
+        </div>
+      </div>
+      <hr />
+      <div class="tabs">
+        <div class="tab active" onclick="showContent('context')">CONTEXT</div>
+        <div class="tab" onclick="showContent('research')">RESEARCH</div>
+        <div class="tab" onclick="showContent('process')">PROCESS</div>
+        <div class="tab" onclick="showContent('solution')">SOLUTION</div>
+        <div class="tab" onclick="showContent('learnings')">LEARNINGS</div>
+      </div>
+      <div id="context" class="content active">
+        <h2>Context</h2>
+        <hr />
+       
+        <p>
+          Dropdown menus are a common UI componenet used across various types of
+          applications, allowing users to display and choose from a list of
+          options triggered from a single click or hovering over a component. 
+          In this project, I will analyze multiple examples of the dropdown menu from different applications, examining the component's interactions with user input.
+          I will then answer the question of how we can create a more 
+          <select class="dropdown-bt2">
+            <option>
+              accessible
+            </option>
+            <option>
+              efficient
+            </option>
+            <option>learnable</option>
+            <option>memorable</option>
+          </select>
+          dropdown menu.
+          
+        </p>
+       
+      </div>
+      <div id="research" class="content">
+        <h2>Research</h2>
+        <hr />
+        
+        <p>
+          In this project, I analyzed three dropdown menus utilized in different
+          contexts with different user inputs and outputs:
+        </p>
+        <div class="contexts_list">
+          <div class="context">
+            <span class="number">01</span>
+            <div class="context-content">
+              <h2 class="title">Brown University Website</h2>
+            
+              <p class="description">
+                <div class="slideshow" style="width: 100%">
+                  <img
+                    class="slide_brown"
+                    src="assets/brown_collapsed.png"
+                    style="width: 100%; margin: auto"
+                  />
+                  <img
+                    class="slide_brown"
+                    src="assets/brown_expanded.png"
+                    style="width: 100%; margin: auto"
+                  />
+                  <img
+                    class="slide_brown"
+                    src="assets/brown_option_hover.png"
+                    style="width: 100%; margin: auto"
+                  />
+                </div>
+                
+              </p>
+              
+            </div>
+          </div>
+          <div class="context">
+            <span class="number">02</span>
+            <div class="context-content">
+              <h2 class="title">Visual Studio Code Desktop App</h2>
+              <p class="description">
+                <div class="slideshow" style="width: 100%">
+                  <img
+                    class="slide_ikea"
+                    src="assets/vscode_collapsed.png"
+                    style="width: 100%; margin: auto"
+                  />
+                  <img
+                    class="slide_ikea"
+                    src="assets/vscode_hover.png"
+                    style="width: 100%; margin: auto"
+                  />
+                  <img
+                    class="slide_ikea"
+                    src="assets/vscode_expand.png"
+                   style="width: 100%; margin: auto"
+                  />
+                  </div>
+              </p>
+            </div>
+          </div>
+          <div class="context">
+            <span class="number">03</span>
+            <div class="context-content">
+              <h2 class="title">
+                The College Hill Independent Website
+              </h2>
+              <p class="description">
+                <div class="slideshow" style="width: 100%">
+                  <img
+                    class="slide_indy"
+                    src="assets/indy_collapsed.png"
+                    style="width: 100%; margin: auto"
+                  />
+                  <img
+                    class="slide_indy"
+                    src="assets/indy_expanded.png"
+                    style="width: 100%; margin: auto"
+                  />
+                  <img
+                    class="slide_indy"
+                    src="assets/indy_option_hover.png"
+                    style="width: 100%; margin: auto"
+                  />
+                  </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+          <b>Examaning user interactions inputs and outputs of the dropdown menus:</b>
+          <br>
+          <br>
+          <img
+                    src="assets/input.png"
+                    style="width: 80%; margin: auto"
+                  />
+                  <img
+                    src="assets/output.png"
+                    style="width: 80%; margin: auto"
+                  />
+        
+      </div>
+      <div id="process" class="content">
+        <h2>Process</h2>
+        <hr />
+        <p>
+          To fully visualize the interactions and accessibility aspects of the
+          dropdown menu component, I created state models to examine how users
+          interact with the menu within the context of The Indy/The College Hill Independent website (01). I
+          create two state models to focus on both mouse and keyboard users.
+        </p>
+        <div class="indy" style="width: 100%; display: flex; justify-content: center; gap: 10px;">
+          <img
+            class="model_indy"
+            src="assets/model_indy_mouse.png"
+            style="width: 50%;"
+          />
+          <img
+            class="model_indy"
+            src="assets/model_indy_keyboard.png"
+            style="width: 50%;"
+          />
+        </div>
+        
+      </div>
+      <div id="solution" class="content">
+        <h2>Solution</h2>
+        <hr />
+        <p><b>The final step of the project is the solution. I construct my revised state models for a dropdown menu component for both mouse and keyboard users.</b></p>
+        
+        <div class="revised" style="width: 100%; display: flex; justify-content: center; gap: 10px;">
+          <img
+            class="model_revised"
+            src="assets/model_revised_mouse.png"
+            style="width: 50%;"
+          />
+          <img
+            class="model_revised"
+            src="assets/model_revised_keyboard.png"
+            style="width: 50%;"
+          />
+        </div>
+        <p><b>Using the state models and the research conducted, I use Figma to construct a revised component within the context of the Independent College Hill website. Two annotated designs were created:</b></p>
+
+        <p><b>Initial state (before user interaction):</b></p>
+
+        <img
+            class="result"
+            src="assets/results1.png"
+            style="width: 100%;"
+          />
+          <p><b>Active state (expanded dropdown menu):</b></p>
+
+          <img
+            class="result"
+            src="assets/results2.png"
+            style="width: 100%;"
+          />
+          <br>
+          <br>
+          <b>Final Zoomed-in Revisions (Designed in Figma):</b>
+          <hr>
+          <div class="revised" style="width: 100%; display: flex; justify-content: center; gap: 10px;">
+            <img
+              class="model_revised"
+              src="assets/results3.png"
+              style="width: 50%;"
+            />
+            <img
+              class="model_revised"
+              src="assets/results4.png"
+              style="width: 50%;"
+            />
+        </div>
+      </div>
+      <div id="learnings" class="content" style="text-align:left">
+        <h2>Learnings</h2>
+        <hr />
+        <p>
+          <b>Observations from Original Components
+          </b>
+          <ul><li>The <u>Brown University</u> dropdown menu component did well in terms of accessibility across the input forms, allowing for multiple ways to expand and collapse the dropdown menu for both keyboard and mouse pad users. I implemented this similarly in my design by allowing keyboard and/or mousepad interactions to be used to access the menu in similar ways.
+          </li>
+        <li>The <u>Visual Studio Code</u> app design hit similar points in accessibility focused on click-based interaction over hover-based. I decided to implement this into my design on the dropdown menu. I changed the College Hill Independent dropdown menu to be click-based interactions only, where users had to click on the section heading to expand the menu. 
+        </li>
+      <li>Click-based input has a positive impact on users with impairments as people who use only keyboards, touchscreens, or assistive devices might not have access to the hover-based interactions.
+      </li>
+    <li>Keeping in mind the observations from the <u>College Hill Independent</u> and the other two components, I think mouse users are the most commonly prioritized in the process of creating components. This impacts the user experience, particularly for non-mouse users, as inputs and outputs for those users might not be taken into consideration in the design or development as much. This is what seems to have happened in the College Hill Independent website, where the keyboard accessibility was not fully developed when compared to mouse accessibility.
+    </li>
+  <li>Inaccessibility in the input aspect for the <u>College Hill Independent</u> component can negatively impact users if they don’t have access to their mousepad and need to use the dropdown menu. If the dropdown menu is not accessible via keyboard, users with motor impairments or broken touchpads might be unable to navigate through.
+  </li>
+</ul></p>
+<p><b>Accessibility Considerations in Final Redesign
+</b>
+<ul><li>Relying on hover-based interactions can be difficult to use for populations with motor impairments as well as for users with screen readers and thus, I considered this in my design. 
+</li>
+<li>One accessibility consideration not completely addressed by the components I observed that I ended up accounting for was the two-column menu size instead of a longer one so that users wouldn’t need to find a way to scroll down to see all the options. 
+</li>
+<li>My design solves a “mismatch” by implementing multiple ways to expand the menu instead of focusing on the implementation of a “default” that might not be accessible for keyboard or screen reader users. 
+</li></ul></p>
+      </div>
+    </div>
+    
+    <!-- Javascript for automatic slideshows-->
+    <script>
+      function carousel(slideshowClass) {
+        var slides = document.getElementsByClassName(slideshowClass);
+        var index = 0;
+
+        function showSlides() {
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          index++;
+          if (index > slides.length) {
+            index = 1;
+          }
+          slides[index - 1].style.display = "block";
+          setTimeout(showSlides, 2000);
+        }
+
+        showSlides();
+      }
+      carousel("slide_ikea");
+      carousel("slide_brown");
+      carousel("slide_indy");
+
+
+      function showContent(section) {
+        let contents = document.querySelectorAll(".content");
+        let tabs = document.querySelectorAll(".tab");
+        contents.forEach((content) => content.classList.remove("active"));
+        tabs.forEach((tab) => tab.classList.remove("active"));
+        document.getElementById(section).classList.add("active");
+        document
+          .querySelector(`[onclick="showContent('${section}')"]`)
+          .classList.add("active");
+      }
+      let slideIndex = 0;
+      function showSlides(n) {
+        let slides = document.querySelectorAll(".slide");
+        slides.forEach((slide) => (slide.style.display = "none"));
+        slideIndex = (n + slides.length) % slides.length;
+        slides[slideIndex].style.display = "block";
+      }
+      function plusSlides(n) {
+        showSlides(slideIndex + n);
+      }
+      showSlides(slideIndex);
+
+    </script>
+  </body>
+</html>
